@@ -16,6 +16,7 @@ namespace Calculator
         string OutputField { get; set; }
         event EventHandler AdditionButton;
         event EventHandler EqualButton;
+        event EventHandler InputChanged;
     }
 
     public partial class CalculatorUI : Form, ICalculatorUI
@@ -25,6 +26,13 @@ namespace Calculator
             InitializeComponent();
             PlusButton.Click += PlusButton_Click;
             EqualsButton.Click += EqualsButton_Click;
+            InputBox.TextChanged += InputBox_TextChanged;
+
+        }
+
+        private void InputBox_TextChanged(object sender, EventArgs e)
+        {
+            InputChanged?.Invoke(this, EventArgs.Empty);
         }
 
         private void EqualsButton_Click(object sender, EventArgs e)
@@ -51,6 +59,8 @@ namespace Calculator
 
         public event EventHandler AdditionButton;
         public event EventHandler EqualButton;
+        public event EventHandler InputChanged;
+        
 
     }
 }

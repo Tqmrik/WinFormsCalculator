@@ -20,11 +20,17 @@ namespace Calculator
 
 
             _calculatorView.EqualButton += _calculatorView_EqualButton;
+            _calculatorView.InputChanged += _calculatorView_InputChanged;
+        }
+
+        private void _calculatorView_InputChanged(object sender, EventArgs e)
+        {
+            _calculatorView.OutputField = _mathHandler.DynamicCalculations(_calculatorView.InputField);
         }
 
         private void _calculatorView_EqualButton(object sender, EventArgs e)
         {
-            _calculatorView.OutputField = _mathHandler.EqualsOperation(_calculatorView.InputField);
+            _calculatorView.InputField = _mathHandler.EqualsOperation(_calculatorView.InputField);
         }
     }
 }

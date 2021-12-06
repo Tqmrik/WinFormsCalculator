@@ -18,4 +18,3 @@ F:\Users\TEMK\Source\Repos\WinFormsCalculator\Calculator\Calculator\obj\Debug\ne
 F:\Users\TEMK\Source\Repos\WinFormsCalculator\Calculator\Calculator\obj\Debug\net5.0-windows\Calculator.genruntimeconfig.cache
 F:\Users\TEMK\Source\Repos\WinFormsCalculator\Calculator\Calculator\bin\Debug\net5.0-windows\MathHandler.dll
 F:\Users\TEMK\Source\Repos\WinFormsCalculator\Calculator\Calculator\bin\Debug\net5.0-windows\MathHandler.pdb
-F:\Users\TEMK\Source\Repos\WinFormsCalculator\Calculator\Calculator\obj\Debug\net5.0-windows\Calculator.csproj.CopyComplete

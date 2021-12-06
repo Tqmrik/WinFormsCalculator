@@ -7,22 +7,47 @@ namespace MathHandler
     {
         public string EqualsOperation(string input);
         public int OperatorHandler(int firstNumber, string operat, int secondNumber);
+        public string DynamicCalculations(string input);
     }
     public class MathOperations : IMathOperations
     {
         public string EqualsOperation(string input)
         {
-            Queue<string> Inpt = new Queue<string>();
-            foreach(string element in input.Split(' '))
+            return input + " =";
+        }
+
+        public string DynamicCalculations(string input)
+        {
+            try
             {
-                Inpt.Enqueue(element);
+                Queue<string> Inpt = new Queue<string>();
+                foreach (string element in input.Split(' '))
+                {
+                    Inpt.Enqueue(element);
+                }
+                int result = int.Parse(Inpt.Dequeue());
+                while(Inpt.Count != 0)
+                {
+                    switch (Inpt.Dequeue())
+                    {
+                        case "+":
+                            result += int.Parse(Inpt.Dequeue());
+                            break;
+                        case "-":
+                            result -= int.Parse(Inpt.Dequeue());
+                            break;
+                        case "*":
+                            result *= int.Parse(Inpt.Dequeue());
+                            break;
+                    }
+                }
+
+                return result.ToString();
             }
-            int firstNumber = int.Parse(Inpt.Dequeue());
-            string operat = Inpt.Dequeue();
-            int secondNumber = int.Parse(Inpt.Dequeue());
-
-            return OperatorHandler(firstNumber, operat, secondNumber).ToString();
-
+            catch (Exception ex)
+            {
+                return "";
+            }
         }
 
         public int OperatorHandler(int firstNumber, string operat, int secondNumber)
