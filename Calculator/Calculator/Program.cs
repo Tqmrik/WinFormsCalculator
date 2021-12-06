@@ -17,7 +17,11 @@ namespace Calculator
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+
+            //Entry point for whole app, add your interfaces here and load its with your UI
+
+            Application.Run(new CalculatorUI());
         }
     }
 }
