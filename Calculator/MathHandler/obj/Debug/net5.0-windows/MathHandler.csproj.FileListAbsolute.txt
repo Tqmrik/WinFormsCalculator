@@ -1,0 +1,12 @@
+F:\Users\TEMK\Source\Repos\WinFormsCalculator\Calculator\MathHandler\bin\Debug\net5.0-windows\MathHandler.deps.json
+F:\Users\TEMK\Source\Repos\WinFormsCalculator\Calculator\MathHandler\bin\Debug\net5.0-windows\MathHandler.dll
+F:\Users\TEMK\Source\Repos\WinFormsCalculator\Calculator\MathHandler\bin\Debug\net5.0-windows\ref\MathHandler.dll
+F:\Users\TEMK\Source\Repos\WinFormsCalculator\Calculator\MathHandler\bin\Debug\net5.0-windows\MathHandler.pdb
+F:\Users\TEMK\Source\Repos\WinFormsCalculator\Calculator\MathHandler\obj\Debug\net5.0-windows\MathHandler.csproj.AssemblyReference.cache
+F:\Users\TEMK\Source\Repos\WinFormsCalculator\Calculator\MathHandler\obj\Debug\net5.0-windows\MathHandler.GeneratedMSBuildEditorConfig.editorconfig
+F:\Users\TEMK\Source\Repos\WinFormsCalculator\Calculator\MathHandler\obj\Debug\net5.0-windows\MathHandler.AssemblyInfoInputs.cache
+F:\Users\TEMK\Source\Repos\WinFormsCalculator\Calculator\MathHandler\obj\Debug\net5.0-windows\MathHandler.AssemblyInfo.cs
+F:\Users\TEMK\Source\Repos\WinFormsCalculator\Calculator\MathHandler\obj\Debug\net5.0-windows\MathHandler.csproj.CoreCompileInputs.cache
+F:\Users\TEMK\Source\Repos\WinFormsCalculator\Calculator\MathHandler\obj\Debug\net5.0-windows\MathHandler.dll
+F:\Users\TEMK\Source\Repos\WinFormsCalculator\Calculator\MathHandler\obj\Debug\net5.0-windows\ref\MathHandler.dll
+F:\Users\TEMK\Source\Repos\WinFormsCalculator\Calculator\MathHandler\obj\Debug\net5.0-windows\MathHandler.pdb

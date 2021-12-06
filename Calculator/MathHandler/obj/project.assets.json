@@ -1,33 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {
-      "MathHandler/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/MathHandler.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MathHandler.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WindowsForms"
-        ]
-      }
-    }
+    "net5.0-windows7.0": {}
   },
-  "libraries": {
-    "MathHandler/1.0.0": {
-      "type": "project",
-      "path": "../MathHandler/MathHandler.csproj",
-      "msbuildProject": "../MathHandler/MathHandler.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": [
-      "MathHandler >= 1.0.0"
-    ]
+    "net5.0-windows7.0": []
   },
   "packageFolders": {
     "C:\\Users\\TEMK\\.nuget\\packages\\": {},
@@ -36,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Users\\TEMK\\Source\\Repos\\WinFormsCalculator\\Calculator\\Calculator\\Calculator.csproj",
-      "projectName": "Calculator",
-      "projectPath": "F:\\Users\\TEMK\\Source\\Repos\\WinFormsCalculator\\Calculator\\Calculator\\Calculator.csproj",
+      "projectUniqueName": "F:\\Users\\TEMK\\Source\\Repos\\WinFormsCalculator\\Calculator\\MathHandler\\MathHandler.csproj",
+      "projectName": "MathHandler",
+      "projectPath": "F:\\Users\\TEMK\\Source\\Repos\\WinFormsCalculator\\Calculator\\MathHandler\\MathHandler.csproj",
       "packagesPath": "C:\\Users\\TEMK\\.nuget\\packages\\",
-      "outputPath": "F:\\Users\\TEMK\\Source\\Repos\\WinFormsCalculator\\Calculator\\Calculator\\obj\\",
+      "outputPath": "F:\\Users\\TEMK\\Source\\Repos\\WinFormsCalculator\\Calculator\\MathHandler\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -60,11 +38,7 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
-          "projectReferences": {
-            "F:\\Users\\TEMK\\Source\\Repos\\WinFormsCalculator\\Calculator\\MathHandler\\MathHandler.csproj": {
-              "projectPath": "F:\\Users\\TEMK\\Source\\Repos\\WinFormsCalculator\\Calculator\\MathHandler\\MathHandler.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

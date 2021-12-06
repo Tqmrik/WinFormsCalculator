@@ -34,7 +34,7 @@ namespace Calculator
             this.MenuEdit = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.CalculationField = new System.Windows.Forms.TextBox();
+            this.InputBox = new System.Windows.Forms.TextBox();
             this.ZeroButton = new System.Windows.Forms.Button();
             this.CommaButton = new System.Windows.Forms.Button();
             this.EqualsButton = new System.Windows.Forms.Button();
@@ -63,6 +63,7 @@ namespace Calculator
             this.TwoButton = new System.Windows.Forms.Button();
             this.ThreeButton = new System.Windows.Forms.Button();
             this.MinusButton = new System.Windows.Forms.Button();
+            this.OutputBox = new System.Windows.Forms.TextBox();
             this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,20 +104,19 @@ namespace Calculator
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
             this.toolStripMenuItem4.Size = new System.Drawing.Size(12, 20);
             // 
-            // CalculationField
+            // InputBox
             // 
-            this.CalculationField.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.InputBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CalculationField.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CalculationField.Location = new System.Drawing.Point(20, 35);
-            this.CalculationField.Margin = new System.Windows.Forms.Padding(10);
-            this.CalculationField.Multiline = true;
-            this.CalculationField.Name = "CalculationField";
-            this.CalculationField.PlaceholderText = "0";
-            this.CalculationField.ReadOnly = true;
-            this.CalculationField.Size = new System.Drawing.Size(250, 60);
-            this.CalculationField.TabIndex = 2;
-            this.CalculationField.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.InputBox.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.InputBox.Location = new System.Drawing.Point(20, 35);
+            this.InputBox.Margin = new System.Windows.Forms.Padding(10);
+            this.InputBox.Multiline = true;
+            this.InputBox.Name = "InputBox";
+            this.InputBox.PlaceholderText = "6 + 6";
+            this.InputBox.Size = new System.Drawing.Size(250, 30);
+            this.InputBox.TabIndex = 2;
+            this.InputBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // ZeroButton
             // 
@@ -457,11 +457,24 @@ namespace Calculator
             this.MinusButton.Text = "-";
             this.MinusButton.UseVisualStyleBackColor = true;
             // 
+            // OutputBox
+            // 
+            this.OutputBox.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.OutputBox.Location = new System.Drawing.Point(20, 70);
+            this.OutputBox.Multiline = true;
+            this.OutputBox.Name = "OutputBox";
+            this.OutputBox.PlaceholderText = "0";
+            this.OutputBox.ReadOnly = true;
+            this.OutputBox.Size = new System.Drawing.Size(250, 33);
+            this.OutputBox.TabIndex = 31;
+            this.OutputBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // CalculatorUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 361);
+            this.Controls.Add(this.OutputBox);
             this.Controls.Add(this.MinusButton);
             this.Controls.Add(this.ThreeButton);
             this.Controls.Add(this.TwoButton);
@@ -490,7 +503,7 @@ namespace Calculator
             this.Controls.Add(this.PlusButton);
             this.Controls.Add(this.CommaButton);
             this.Controls.Add(this.ZeroButton);
-            this.Controls.Add(this.CalculationField);
+            this.Controls.Add(this.InputBox);
             this.Controls.Add(this.MenuStrip);
             this.MainMenuStrip = this.MenuStrip;
             this.MinimumSize = new System.Drawing.Size(300, 400);
@@ -510,7 +523,7 @@ namespace Calculator
         private System.Windows.Forms.ToolStripMenuItem MenuEdit;
         private System.Windows.Forms.ToolStripMenuItem MenuHelp;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.TextBox CalculationField;
+        private System.Windows.Forms.TextBox InputBox;
         private System.Windows.Forms.Button ZeroButton;
         private System.Windows.Forms.Button CommaButton;
         private System.Windows.Forms.Button EqualsButton;
@@ -539,6 +552,7 @@ namespace Calculator
         private System.Windows.Forms.Button TwoButton;
         private System.Windows.Forms.Button ThreeButton;
         private System.Windows.Forms.Button MinusButton;
+        private System.Windows.Forms.TextBox OutputBox;
     }
 }
 
